@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="font_j1jjnxqs5q/iconfont.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="hd">
+				<div class="hd-top">
+					<p class="hd-top-p">
+						<span class="iconfont icon-songhuodizhi"></span>
+						送货地址：上海
+					</p>
+						<ul>
+							<li>
+								<p id="username1">下午好，请<!--<a href="login.html">登录</a>--></p>
+							</li>
+							<script>
+								
+								 var username = getCookie("tid")
+								 //console.log(username)
+			                     var strh = ""
+			                     if(username == undefined){
+			                         strh =`<a href="login.html">[登录]</a>`
+			                     }else{
+			                        strh =`<a href="#">${username}</a>`
+			                      }
+			                     $("#username1").html(strh).append
+
+							</script>
+							<li><a href="registe.html">注册</a></li>
+							<li><a href="//vip.yhd.com">
+								<span class="iconfont icon-huiyuanjulebu"></span>
+								<span class="text">会员俱乐部</span>
+							</a></li>
+							<li><a href="#">
+								<span class="iconfont icon-icon2-copy"></span>
+								<span class="text">我的订单</span>
+							</a></li>
+							<li>
+								<span class="iconfont icon-shouji"></span>
+								<span class="text">下载APP</span>
+							</li>
+						</ul>		
+				</div>
+			</div>
+			<div class="hd-sou">
+				<div class="hd-sousuo">
+					<div class="hd-sou-l">
+						<a href="first-page.html">
+							<img src="img/logo@2x.png" />
+							<img src="img/nnn.jpg"/>
+						</a>
+					</div>
+					<div class="hd-sou-r">
+						<div class="hd-sou-rl">
+							<div class="sousuo">
+								<input type="text" class="txt" placeholder="卡地亚" />
+				                  <a href="#"><span class="icon iconfont">&#xe507;</span></a>
+							</div>
+							<ul class="hd-shou">
+								<li><a href="https://search.yhd.com/c0-0/k%25E5%25B9%25B3%25E6%259D%25BF%25E7%2594%25B5%25E8%2584%2591/">平板电脑</a></li>
+								<li><a href="https://search.yhd.com/c0-0/k%25E6%259A%25B4%25E9%25BE%2599/">暴龙</a></li>
+								<li><a href="https://search.yhd.com/c0-0/k%25E6%25AC%25A7%25E7%25B1%25B3%25E8%258C%2584/">欧米茄</a></li>
+								<li><a href="https://search.yhd.com/c0-0/k%25E8%258C%2583%25E8%25A5%25BF%25E5%2593%25B2/">范西哲</a></li>
+								<li><a href="https://search.yhd.com/c0-0/k%25E5%25A4%25A7%25E7%25B1%25B3/">大米</a></li>
+								<li><a href="https://search.yhd.com/c0-0/k%25E6%258A%25BD%25E7%25BA%25B8/">抽纸</a></li>
+								<li><a href="https://search.yhd.com/c0-0/k%25E9%25A6%2599%25E5%25A5%2588%25E5%2584%25BF/">香奈儿</a></li>
+							</ul>
+						</div>
+						<div class="hd-sou-ri">
+							<a href="shopping cart.html">
+								<span class="icon iconfont">&#xe505;</span>
+								<input type="button" id="btn" value="购物车" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="hd-sou-foot">
+					<ul>
+						<li class="leimu">
+							<span class="icon iconfont">&#xe753;</span>
+							<input type="button" id="btn" value="全部类目" />
+							<span class="icon iconfont">&#xe60a;</span>
+						</li>
+						<li><a href="https://sale.yhd.com/act/sAxlhFbmeSTJYywH.html">抢金币</a></li>
+						<li><a href="https://coin.yhd.com/">金币签到</a></li>
+						<li><a href="https://channel.yhd.com/recharge.html">充值</a></li>
+						<li><a href="https://qianggou.yhd.com/">超级单品</a></li>
+						<li><a href="https://qianggou.yhd.com/brands/">超级品牌</a></li>
+						<li><a href="https://qianggou.yhd.com/classes/">超级品类</a></li>
+						<li><a href="https://coupon.yhd.com/couponCenter/home">领劵中心</a></li>
+					</ul>
+				</div>
+				<div class="hd-sou-xq">
+					<ul class="list1">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li>零食</li>
+					</ul>
+					<ul class="list2">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<article>
+			<div class="article">
+				<div class="art">
+					<div class="art-t">
+						<p>
+							<span>食品</span> >
+							<span>休闲食品</span> >
+							<span>休闲零食</span> >
+							<span>良品铺子</span> >
+							<span>良品铺子  麻辣豆皮120g</span> 
+						</p>
+						<!--<div class="art-t-l">
+							<div class="minimg">
+							</div>
+							<div class="maximg">
+							</div>
+						</div>-->
+						<div class="art-t-r">
+							<h1 class="mh">
+								<!--<span>自营</span>-->
+								
+							</h1>
+							<div class="mod">
+								<div class="dsq">
+						            <a href="#">
+						            	<img src="img/supersingle.jpg" />
+						            </a>
+						            <div class="djs">aaaaaaaa</div>
+					          	</div>
+					          	<div class="qgj">
+						            <ul>
+						              <li class="dag">抢购价</li>
+						              <li class="tag">￥26.99</li>
+						            </ul>
+						          </div>
+						          <ul class="hpl">
+						            <li>
+						              <a href="">
+						              	<span class="iconfont icon-huiyuanjulebu"></span>
+						                好评率<span>100%</span>[评论0条]</a>
+						            </li>
+						          </ul> 
+							</div>
+							<div class="suit">
+					            <span>优惠券</span>
+					            <ul>
+					              <li>满799减100</li>
+					              <li>满799减100</li>
+					              <li>满799减100</li>
+					            </ul>
+					            <div class="yhj">
+					              领取优惠券
+					              <span class="iconfont icon-xiajiantou "></span>
+					            </div>
+			          	   </div>
+			          	   <div class="gwc">
+					             价格：<input type="text " value="" /></br>
+					            <input type="button" id="btn1" value="-" />
+					            <input type="text" id="btn3" value="1" />
+					            <input type="button" id="btn2" value="+" /><br/>
+					            <span class="icon iconfont">&#xe505;</span>
+					            <!--<input type="button"  id="car" value="加入购物车" /> -->
+				          </div>
+						</div>
+					</div>
+					<div class="art-b">
+						<ul class="list">
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+		<footer>
+      	<div class="footer">
+      		<div class="f-top">
+      			<ul>
+      				<li>
+      					<img src="img/b1.png"/>
+      					<b>正品保障</b><br>
+      					<span>正品行货 放心选购</span>
+      				</li>
+      				<li>
+      					<img src="img/b2.png"/>
+      					<b>满86元包邮</b><br>
+      					<span>满86元 免运费</span>
+      				</li>
+      				<li>
+      					<img src="img/b3.png"/>
+      					<b>售后无忧</b><br>
+      					<span>7天无理由退货</span>
+      				</li>
+      				<li>
+      					<img src="img/b4.png"/>
+      					<b>准时送达</b><br>
+      					<span>收货时间由你做主</span>
+      				</li>
+      			</ul>
+      		</div>
+      		<div class="f-liebiao">
+      			<div class="f-lie-l">
+      				<ul>
+      					<li><a href="#"><b>新手入门</b></a></li>
+      					<li><a href="#">购物流程</a></li>
+      					<li><a href="#">会员制度</a></li>
+      					<li><a href="#">订单查询</a></li>
+      					<li><a href="#">网站地图</a></li>
+      				</ul>
+      				<ul>
+      					<li><a href="#"><b>新手入门</b></a></li>
+      					<li><a href="#">购物流程</a></li>
+      					<li><a href="#">会员制度</a></li>
+      					<li><a href="#">订单查询</a></li>
+      					<li><a href="#">网站地图</a></li>
+      				</ul>
+      				<ul>
+      					<li><a href="#"><b>新手入门</b></a></li>
+      					<li><a href="#">购物流程</a></li>
+      					<li><a href="#">会员制度</a></li>
+      					<li><a href="#">订单查询</a></li>
+      					<li><a href="#">网站地图</a></li>
+      				</ul>
+      				<ul>
+      					<li><a href="#"><b>新手入门</b></a></li>
+      					<li><a href="#">购物流程</a></li>
+      					<li><a href="#">会员制度</a></li>
+      					<li><a href="#">订单查询</a></li>
+      					<li><a href="#">网站地图</a></li>
+      				</ul>
+      			</div>
+      			<div class="f-lie-r">
+      				<div class="app">
+      					<p>APP更优惠</p>
+      					<a href="https://app.yhd.com/"><img src="img/app.png"/></a>
+      				</div>
+      				<div class="weixin">
+      					<p>加微信查订单</p>
+      					<img src="img/weixin.jpg"/>
+      				</div>
+      			</div>
+      		</div>
+      		<p class="f-di1">
+      			<span>沪ICP备16050468号</span>  |
+      			<a href="https://cms.yhd.com/cms/view.do?topicId=16"><span>经营证照</span></a>|
+      			<a href="https://d9.yihaodianimg.com/N10/M05/00/A9/ChEi2lkQGRaAfaeeAAIhVwT2TYo18400.jpg"><span>互联网药品信息服务资格证（沪）-经营性-2017-0006</span></a> |
+      			<span>违法和不良信息举报电话：0527-88105253</span> |
+      			<a href="https://d9.yihaodianimg.com/N11/M04/76/1C/ChEwoVnfFfeAfzKUAAg9urXNqaA12000.jpg"><span>沪B2-20170039</span></a> |
+      			<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502002939"><span>沪公网安备 31010502002939</span></a> |
+      			<a href="https://seo.yhd.com/sitelink/sitelink.html"><span>友情链接</span></a> |
+      			<a href="https://cms.yhd.com/cms/view.do?topicId=105"><span>出版物经营许可证</span></a> |
+      			<a href="https://img30.360buyimg.com/img/jfs/t1/6492/18/11106/1876411/5c239337Ef050b204/c78bc70077a34bf2.jpg"><span>增值电信业务经营许可证</span></a>
+      		</p>
+      		<p class="f-di2">
+      			<span>Copyright© 1号店网上超市 2007-2019，All Rights Reserved</span>
+      		</p>
+      		<div>
+      			<ul class="f-di3">
+      				<li><a href="http://www.12377.cn/">
+      					<img src="img/wangxinban.jpg" />
+      				</a></li>
+      				<li><a href="https://scjgj.sh.gov.cn/platform/survey/step1_phone">
+      					<img src="img/wanggou.png"/>
+      				</a></li>
+      				<li><a href="http://www.shjbzx.cn/">
+      					<img src="img/shanghu.jpg"/>
+      				</a></li>
+      				<li><a href="https://credit.cecdc.com/CX20150608010268010812.html">
+      					<img src="img/chengxin.jpg"/>
+      				</a></li>
+      				<li><a href="https://ss.knet.cn/verifyseal.dll?sn=e13050631010040492h5mq000000&ct=df&a=1&pa=500267">
+      					<img src="img/kexin.png"/>
+      				</a></li>
+      				<li><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502002939">
+      					<img src="img/quanan.png"/>
+      				</a></li>
+      				<li><a href="https://www.yhd.com/">
+      					<img src="img/1hao.jpg"/>
+      				</a></li>
+      			</ul>
+      		</div>
+      	</div>
+      </footer>
+	</body>
+</html>
